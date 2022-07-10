@@ -86,6 +86,8 @@ namespace JSON_to_PDF_resume
                     PdfDocument pdf = new PdfDocument();
                     pdf.Info.Title = Fullname + "_" + "Resume";
                     PdfPage page = pdf.AddPage();
+
+                    pdf.Save(saveFile.FileName);
                 }
             }
         }
