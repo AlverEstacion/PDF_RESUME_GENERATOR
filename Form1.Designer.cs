@@ -28,13 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.GenerateBTN = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // GenerateBTN
+            // 
+            this.GenerateBTN.Location = new System.Drawing.Point(105, 177);
+            this.GenerateBTN.Name = "GenerateBTN";
+            this.GenerateBTN.Size = new System.Drawing.Size(126, 51);
+            this.GenerateBTN.TabIndex = 0;
+            this.GenerateBTN.Text = "GENERATE";
+            this.GenerateBTN.UseMnemonic = false;
+            this.GenerateBTN.UseVisualStyleBackColor = true;
+            this.GenerateBTN.Click += new System.EventHandler(this.GenerateBTN_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(347, 288);
+            this.Controls.Add(this.GenerateBTN);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -42,6 +55,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button GenerateBTN;
     }
 }
 
