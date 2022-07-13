@@ -18,3 +18,23 @@ C:\Users\Alver\source\repos\JSON to PDF resume\obj\Debug\JSON to PDF resume.cspr
 C:\Users\Alver\source\repos\JSON to PDF resume\obj\Debug\JSON to PDF resume.csproj.CopyComplete
 C:\Users\Alver\source\repos\JSON to PDF resume\obj\Debug\JSON to PDF resume.exe
 C:\Users\Alver\source\repos\JSON to PDF resume\obj\Debug\JSON to PDF resume.pdb
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\bin\Debug\JSON to PDF resume.exe.config
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\bin\Debug\JSON to PDF resume.exe
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\bin\Debug\JSON to PDF resume.pdb
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\bin\Debug\PdfSharp.Charting.dll
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\bin\Debug\PdfSharp.dll
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\bin\Debug\PdfSharp.xml
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\bin\Debug\PdfSharp.Charting.xml
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\obj\Debug\JSON to PDF resume.csproj.AssemblyReference.cache
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\obj\Debug\JSON to PDF resume.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\obj\Debug\JSON_to_PDF_resume.Form1.resources
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\obj\Debug\JSON_to_PDF_resume.Properties.Resources.resources
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\obj\Debug\JSON to PDF resume.csproj.GenerateResource.cache
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\obj\Debug\JSON to PDF resume.csproj.CoreCompileInputs.cache
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\obj\Debug\JSON to PDF resume.csproj.CopyComplete
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\obj\Debug\JSON to PDF resume.exe
+C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\obj\Debug\JSON to PDF resume.pdb

@@ -16,7 +16,7 @@ namespace JSON_to_PDF_resume
 {
     public partial class Form1 : Form
     {
-        private readonly string filepath = @"C:\Users\Alver\source\repos\JSON to PDF resume\jsconfig1.JSON";
+        private readonly string filepath = @"C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\jsconfig1.JSON";
         public Form1()
         {
             InitializeComponent();
@@ -86,7 +86,7 @@ namespace JSON_to_PDF_resume
 
             using (SaveFileDialog saveFile = new SaveFileDialog())
             {
-                saveFile.InitialDirectory = @"C:\Users\Alver\source\repos\JSON to PDF resume\PDF's\resume";
+                saveFile.InitialDirectory = @"C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\PDF";
                 saveFile.FileName = Fullname + ".pdf";
                 saveFile.Filter = "PDF|*.pdf";
                 if (saveFile.ShowDialog() == DialogResult.OK)
@@ -121,6 +121,11 @@ namespace JSON_to_PDF_resume
                     graphics.DrawString(Objective3, regularfont, XBrushes.Black, new XRect(middlemargin, middleinitial - 59, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graphics.DrawString(Objective4, regularfont, XBrushes.Black, new XRect(middlemargin, middleinitial - 46, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graphics.DrawString(Objective5, regularfont, XBrushes.Black, new XRect(middlemargin, middleinitial - 33, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    string pic =  @"C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\picko.png";
+                    XImage image = XImage.FromFile(pic);
+                    graphics.DrawImage(image, leftmargin, 50, 150, 150);
+
 
                     pdf.Save(saveFile.FileName);
                 }
