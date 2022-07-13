@@ -107,7 +107,7 @@ namespace JSON_to_PDF_resume
 
                     graphics.DrawString(Fullname, BigFont, XBrushes.Black, new XRect(-39, 40, page.Width.Point, page.Height.Point), XStringFormats.TopRight);
 
-
+                    graphics.DrawString("OBJECTIVE", captionfont, XBrushes.Black, new XRect(-39, 60, page.Width.Point, page.Height.Point), XStringFormats.TopRight);
 
 
 
