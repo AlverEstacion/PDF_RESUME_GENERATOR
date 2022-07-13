@@ -98,14 +98,14 @@ namespace JSON_to_PDF_resume
                     graphics.DrawRectangle(XBrushes.PeachPuff, 0, 0, page.Width.Point, page.Height.Point);
                     graphics.DrawRectangle(XBrushes.PapayaWhip, 200, 0, page.Width.Point, page.Height.Point);
 
-                    int marginleft = 25;
-                    int initialleft = 200;
+                    int leftmargin = 25;
+                    int leftinitial = 200;
 
-                    int marginmiddle = 220;
-                    int initialmiddle = 200;
+                    int middlemargin = 220;
+                    int middleinitial = 200;
 
 
-                    graphics.DrawString(Fullname, BigFont, XBrushes.Black, new XRect(-60, 40, page.Width.Point, page.Height.Point), XStringFormats.TopRight);
+                    graphics.DrawString(Fullname, BigFont, XBrushes.Black, new XRect(-39, 40, page.Width.Point, page.Height.Point), XStringFormats.TopRight);
 
 
 
