@@ -87,7 +87,27 @@ namespace JSON_to_PDF_resume
                     pdf.Info.Title = Fullname + "_" + "Resume";
                     PdfPage page = pdf.AddPage();
 
+                    XGraphics graphics = XGraphics.FromPdfPage(page);
+                   
+                    XPen line = new XPen(XColors.PeachPuff, 1);
+
+                    XFont captionfont = new XFont(" ", 18, XFontStyle.Bold);
+                    XFont regularfont = new XFont(" ", 12, XFontStyle.Regular);
+                    XFont BigFont = new XFont(" ", 24, XFontStyle.Bold);
+
+                    graphics.DrawRectangle(XBrushes.PeachPuff, 0, 0, page.Width.Point, page.Height.Point);
+                    graphics.DrawRectangle(XBrushes.PapayaWhip, 200, 0, page.Width.Point, page.Height.Point);
+
+
                     pdf.Save(saveFile.FileName);
+
+
+
+
+
+
+
+
                 }
             }
         }
