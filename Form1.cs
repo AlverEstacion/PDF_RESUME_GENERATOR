@@ -26,6 +26,10 @@ namespace JSON_to_PDF_resume
         {
             public string Fullname { get; set; }
             public string Objective { get; set; }
+            public string Objective2 { get; set; }
+            public string Objective3 { get; set; }
+            public string Objective4 { get; set; }
+            public string Objective5 { get; set; }
             public string Primary { get; set; }
             public string PrimaryGraduated { get; set; }
             public string Secondary { get; set; }
@@ -57,6 +61,10 @@ namespace JSON_to_PDF_resume
 
             string Fullname = JSONreume.Fullname;
             string Objective = JSONreume.Objective;
+            string Objective2 = JSONreume.Objective2;
+            string Objective3 = JSONreume.Objective3;
+            string Objective4 = JSONreume.Objective4;
+            string Objective5 = JSONreume.Objective5;
             string Email = JSONreume.Email;
             string Number = JSONreume.Number;
             string Address = JSONreume.Address;
@@ -108,10 +116,11 @@ namespace JSON_to_PDF_resume
                     graphics.DrawString(Fullname, BigFont, XBrushes.Black, new XRect(-39, 40, page.Width.Point, page.Height.Point), XStringFormats.TopRight);
 
                     graphics.DrawString("OBJECTIVE", captionfont, XBrushes.Black, new XRect(-138, 90, page.Width.Point, page.Height.Point), XStringFormats.TopRight);
-
-
-
-
+                    graphics.DrawString(Objective, regularfont, XBrushes.Black, new XRect(middlemargin, middleinitial - 85, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graphics.DrawString(Objective2, regularfont, XBrushes.Black, new XRect(middlemargin, middleinitial - 72, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graphics.DrawString(Objective3, regularfont, XBrushes.Black, new XRect(middlemargin, middleinitial - 59, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graphics.DrawString(Objective4, regularfont, XBrushes.Black, new XRect(middlemargin, middleinitial - 46, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graphics.DrawString(Objective5, regularfont, XBrushes.Black, new XRect(middlemargin, middleinitial - 33, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
                     pdf.Save(saveFile.FileName);
                 }
