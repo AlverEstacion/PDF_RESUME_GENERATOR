@@ -173,6 +173,8 @@ namespace JSON_to_PDF_resume
 
 
                     pdf.Save(saveFile.FileName);
+                    MessageBox.Show("Thankyou for using this PDF Generator");
+                    this.Close();
                 }
             }
         }
