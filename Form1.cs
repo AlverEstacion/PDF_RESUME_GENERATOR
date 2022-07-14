@@ -130,7 +130,7 @@ namespace JSON_to_PDF_resume
                     graphics.DrawString(Objective5, regularfont, XBrushes.Black, new XRect(middlemargin, middleinitial - 33, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
                     //LINE BELOW OBJECTTIVE
-                    graphics.DrawRectangle(XBrushes.PeachPuff, middlemargin, middleinitial - 10, 345, 2);
+                    graphics.DrawRectangle(XBrushes.PeachPuff, middlemargin, middleinitial - 10, 350, 2);
 
                     //PICTURE
                     string pic =  @"C:\Users\Alver\source\repos\PDF_RESUME_GENERATOR\picko.png";
@@ -149,7 +149,7 @@ namespace JSON_to_PDF_resume
                     graphics.DrawString(PlaceofBirth, regularfont, XBrushes.Black, new XRect(leftmargin, leftinitial + 170, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graphics.DrawString(Citizenship, regularfont, XBrushes.Black, new XRect(leftmargin, leftinitial + 185, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
-                    //EDUCATIONS
+                    //EDUCATIONAL PROFILE
                     graphics.DrawString("EDUCATIONAL PROFILE", captionfont, XBrushes.Black, new XRect(middlemargin + 50, middleinitial + 10, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graphics.DrawString("PRIMARY", captionfont2, XBrushes.Black, new XRect(middlemargin, middleinitial + 50, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graphics.DrawString(Primary, regularfont, XBrushes.Black, new XRect(middlemargin, middleinitial + 70, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
@@ -161,6 +161,15 @@ namespace JSON_to_PDF_resume
                     graphics.DrawString(Tertiary, regularfont, XBrushes.Black, new XRect(middlemargin, middleinitial + 210, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graphics.DrawString(TertiaryGraduated, regularfont, XBrushes.Black, new XRect(middlemargin, middleinitial + 225, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
+                    //LINE BELOW EDUCATIONAL PROFILE
+                    graphics.DrawRectangle(XBrushes.PeachPuff, middlemargin, middleinitial + 260, 350, 2);
+
+                    //ASSETS
+                    graphics.DrawString("ASSETS AND CAPABILITIES", captionfont, XBrushes.Black, new XRect(middlemargin + 50, middleinitial + 280, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graphics.DrawString(Assets1, regularfont, XBrushes.Black, new XRect(middlemargin + 20, middleinitial + 320, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graphics.DrawString(Assets2, regularfont, XBrushes.Black, new XRect(middlemargin + 20, middleinitial + 335, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graphics.DrawString(Assets3, regularfont, XBrushes.Black, new XRect(middlemargin + 20, middleinitial + 350, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graphics.DrawString(Assets4, regularfont, XBrushes.Black, new XRect(middlemargin + 20, middleinitial + 365, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
 
                     pdf.Save(saveFile.FileName);
