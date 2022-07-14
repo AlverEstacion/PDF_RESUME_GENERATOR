@@ -126,6 +126,13 @@ namespace JSON_to_PDF_resume
                     XImage image = XImage.FromFile(pic);
                     graphics.DrawImage(image, leftmargin, 50, 150, 150);
 
+                    graphics.DrawString("CONTACTS", captionfont, XBrushes.Black, new XRect(leftmargin, leftinitial + 60, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graphics.DrawString(Email, regularfont, XBrushes.Black, new XRect(leftmargin, leftinitial + 85, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graphics.DrawString(Number, regularfont, XBrushes.Black, new XRect(leftmargin, leftinitial + 100, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graphics.DrawString(Address, regularfont, XBrushes.Black, new XRect(leftmargin, leftinitial + 115, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+
+
 
                     pdf.Save(saveFile.FileName);
                 }
